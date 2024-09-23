@@ -35,7 +35,7 @@ jobs:
       - name: Run Python
         run: |
           python3 scripts/platform_builder.py --platform=android --arch=all --cmake_dir=$HOME/opt/cmake-3.25.2 --llvm_dir=$HOME/opt/llvm-15.0.6 --android_ndk_dir=$HOME/opt/ndk-r25b
-          
+          cp include/dobby.h build/
       - name: LS
         run: |
           ls
